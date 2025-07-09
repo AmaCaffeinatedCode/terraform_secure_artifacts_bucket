@@ -12,4 +12,5 @@ variable "tags" {
 variable "project_url" {
   description = "URL to the GitHub repository for the project"
   type        = string
+  default     = ""
 }
