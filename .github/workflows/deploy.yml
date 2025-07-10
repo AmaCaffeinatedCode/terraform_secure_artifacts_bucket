@@ -36,6 +36,14 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+      
+      - name: Terraform Format Check
+        working-directory: ./env
+        run: terraform fmt -check
+
+      - name: Terraform Validate
+        working-directory: ./env
+        run: terraform validate
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
