@@ -17,6 +17,10 @@ This project provisions a secure, versioned S3 bucket with AES256 server-side en
 
 ## Usage
 
+### Prerequisites
+
+- A remote backend and state lock table must be provisioned and accessible (S3 bucket and DynamoDB table) before running the pipeline.
+
 ### 1. Environment variables
 
 The GitHub Actions CI/CD pipeline uses the following secrets:
